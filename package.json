@@ -33,14 +33,16 @@
   "main": "./lib",
   "dependencies": {
     "passport-oauth1": "1.x.x",
-    "passport-oauth2": "1.x.x"
+    "passport-oauth2": "git://github.com/danteata/passport-oauth2.git"
   },
   "devDependencies": {
     "mocha": "1.x.x",
     "chai": "1.x.x",
     "chai-passport-strategy": "0.1.x"
   },
-  "engines": { "node": ">= 0.4.0" },
+  "engines": {
+    "node": ">= 0.4.0"
+  },
   "scripts": {
     "test": "node_modules/.bin/mocha --reporter spec --require test/bootstrap/node test/*.test.js"
   },
@@ -48,7 +50,7 @@
     "browsers": [
       "chrome/latest"
     ],
-    "harness" : "mocha",
+    "harness": "mocha",
     "files": [
       "test/bootstrap/testling.js",
       "test/*.test.js",
